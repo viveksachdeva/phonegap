@@ -1,0 +1,98 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2013 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+
+#appWrap,
+#appWrap > div {
+    height: 100%;
+}
+#appWrap {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition:         transform .25s ease-in-out;
+}
+
+nav[role=search] {
+    clear: both;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    max-height: 0;
+}
+
+nav[role=search].active {
+    max-height: 15em;
+}
+
+#appWrap.active {
+    -webkit-transform: translate3d(16em, 0, 0);
+    transform: translate3d(16em, 0, 0);
+}
+
+[role="navigation"] {
+    width: 16em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -16em;
+    background-color: #3A4040;
+}
+
+[role=navigation] ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav[role=search]{
+    margin: 0;
+    padding: 0;
+    padding-right: 0.6em;
+}
+
+[role=navigation] li a,
+[role=navigation] .header {
+    display: block;
+    padding: 0.8em;
+    border-bottom: 1px solid #2B2F2F;
+    color: #d0d0d0;
+}
+
+[role=navigation] .header {
+    color: #909090;
+    font-weight: bold;
+}
+
+nav[role=search] input {
+    display: block;
+    width: 100%;
+}
+
+[role=navigation] .bottom-center {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    position: absolute;
+    bottom: 2rem;
+    max-width: 50%;
+    text-align: center;
+}
+
+[role=navigation] .logo {
+    border-style: none;
+    background-color: #3A4040;
+}

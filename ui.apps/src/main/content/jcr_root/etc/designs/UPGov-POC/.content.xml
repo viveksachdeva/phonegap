@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <img/>
+    <clientlib/>
+    <jcr:content
+        cq:doctype="html_5"
+        cq:lastModified="{Date}2015-03-27T13:19:35.545+05:30"
+        cq:lastModifiedBy="admin"
+        jcr:mixinTypes="[]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="NewArchetype Demo Site"
+        sling:resourceType="wcm/core/components/designer">
+        <page-home jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2011-01-25T11:28:02.432+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/download,/libs/foundation/components/image,/libs/foundation/components/mvt,/libs/foundation/components/table,/libs/foundation/components/textimage,/libs/foundation/components/parsys/colctrl,/libs/foundation/components/text,/apps/UPGov-POC/components/content/title,/apps/UPGov-POC/components/servicecomponent]">
+                <section
+                    jcr:primaryType="nt:unstructured"
+                    div.padding="0"/>
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%)&#xa;"/>
+            </par>
+            <logo
+                jcr:lastModified="{Date}2014-05-26T11:36:23.164+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                imageRotate="0"
+                maxWidth="165">
+                <image/>
+            </logo>
+        </page-home>
+        <page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2011-01-25T11:28:02.432+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/download,/libs/foundation/components/image,/libs/foundation/components/mvt,/libs/foundation/components/table,/libs/foundation/components/textimage,/libs/foundation/components/parsys/colctrl,/libs/foundation/components/text,/apps/UPGov-POC/components/content/title,/apps/UPGov-POC/components/servicecomponent]">
+                <section
+                    jcr:primaryType="nt:unstructured"
+                    div.padding="0"/>
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%)&#xa;"/>
+            </par>
+            <logo
+                jcr:lastModified="{Date}2014-05-26T11:36:23.164+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/logo"
+                imageRotate="0"
+                maxWidth="165">
+                <image/>
+            </logo>
+            <Logo
+                jcr:lastModified="{Date}2015-03-27T13:18:55.091+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="UPGov-POC/components/content/logo"
+                path="/content/UPGov/en/homepage">
+                <image
+                    jcr:lastModified="{Date}2015-03-27T13:18:55.091+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    imageRotate="0"/>
+            </Logo>
+        </page>
+        <upGovtForm jcr:primaryType="nt:unstructured">
+            <guidecontainercell jcr:primaryType="nt:unstructured">
+                <rootPanel jcr:primaryType="nt:unstructured">
+                    <items
+                        jcr:lastModified="{Date}2015-03-12T11:30:01.458+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/layouts/gridFluidLayout"
+                        components="group:Form">
+                        <panel jcr:primaryType="nt:unstructured">
+                            <gridFluidLayout
+                                jcr:lastModified="{Date}2015-03-12T11:14:58.502+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/layouts/gridFluidLayout"
+                                components="[group:Adaptive Form,group:UP Govt Adaptive Form]"/>
+                        </panel>
+                    </items>
+                </rootPanel>
+            </guidecontainercell>
+            <logo
+                jcr:lastModified="{Date}2015-03-27T13:19:35.517+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="UPGov-POC/components/content/logo"
+                path="/content/UPGov/en/homepage">
+                <image
+                    jcr:lastModified="{Date}2015-03-27T13:19:35.517+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    imageRotate="0"/>
+            </logo>
+        </upGovtForm>
+        <advanced-enrollment-page jcr:primaryType="nt:unstructured">
+            <guidecontainercell jcr:primaryType="nt:unstructured">
+                <rootPanel jcr:primaryType="nt:unstructured">
+                    <items
+                        jcr:lastModified="{Date}2015-03-12T11:46:33.827+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/layouts/gridFluidLayout"
+                        components="group:Form">
+                        <panel jcr:primaryType="nt:unstructured">
+                            <gridFluidLayout
+                                jcr:lastModified="{Date}2015-03-12T12:08:04.980+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/layouts/gridFluidLayout"
+                                components="group:UP Govt Adaptive Form"/>
+                        </panel>
+                    </items>
+                </rootPanel>
+            </guidecontainercell>
+        </advanced-enrollment-page>
+    </jcr:content>
+    <favicon.ico/>
+</jcr:root>

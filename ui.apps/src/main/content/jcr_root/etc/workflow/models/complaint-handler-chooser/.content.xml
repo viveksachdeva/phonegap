@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/default"
+        cq:lastModified="{Date}2015-03-26T16:18:42.651+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Complaint Handler Chooser"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <process
+                jcr:created="{Date}2015-03-02T11:29:10.504+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-03-02T11:29:47.581+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Send Email and SMS"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.upgov.core.workflows.SendEmailAndSMS"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <participant
+                jcr:created="{Date}2010-09-21T14:47:57.672+02:00"
+                jcr:createdBy="admin"
+                jcr:description="Junior Engineer"
+                jcr:lastModified="{Date}2015-03-03T17:31:31.828+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Junior Engineer"
+                sling:resourceType="cq/workflow/components/model/participant">
+                <metaData
+                    jcr:lastModified="{Date}2010-09-21T14:48:07.024+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    DO_NOTIFY="true"
+                    PARTICIPANT="/home/groups/j/jeg"
+                    timeoutHandler="com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer"
+                    timeoutMillis="200"/>
+            </participant>
+            <or
+                jcr:created="{Date}2015-03-02T11:35:47.334+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-03-26T16:18:42.520+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                default1="true"
+                orSplit="true"
+                script1="function check(){&#xa;    if (workflowData.getPayloadType() == &quot;JCR_PATH&quot;) {&#xa;&#x9;&#x9;log.info(&quot;workflowData----------------------------- &quot; + workflowData);&#xa;         var path = workflowData.getPayload().toString();&#xa;&#x9;&#x9; log.info(&quot;Path----------------------------- &quot; + path);&#xa;         var node = jcrSession.getItem(path);&#xa;&#x9;&#x9;  log.info(&quot;node----------------------------- &quot; + node);&#xa;         var  complaintStatus = node.getProperty(&quot;complaintStatus&quot;).getString();&#xa;&#x9;&#x9;  log.info(&quot;complaintStatus----------------------------- &quot; + complaintStatus);&#xa;         if (complaintStatus==&quot;completed&quot;) {&#xa;&#x9;&#x9;&#x9;  log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;            return false;&#xa;         } &#x9; &#xa;&#x9;&#x9; &#xa;     } else {&#xa;        return false;&#xa;&#x9;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;     }&#xa;&#x9;return true;&#xa;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;true&quot;);&#xa;}"
+                script2="function check(){&#xa;    if (workflowData.getPayloadType() == &quot;JCR_PATH&quot;) {&#xa;&#x9;&#x9;log.info(&quot;workflowData----------------------------- &quot; + workflowData);&#xa;         var path = workflowData.getPayload().toString();&#xa;&#x9;&#x9; log.info(&quot;Path----------------------------- &quot; + path);&#xa;         var node = jcrSession.getItem(path);&#xa;&#x9;&#x9;  log.info(&quot;node----------------------------- &quot; + node);&#xa;         var  complaintStatus = node.getProperty(&quot;complaintStatus&quot;).getString();&#xa;&#x9;&#x9;  log.info(&quot;complaintStatus----------------------------- &quot; + complaintStatus);&#xa;         if (complaintStatus==&quot;completed&quot;) {&#xa;&#x9;&#x9;&#x9;  log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;            return true;&#xa;         } &#x9; &#xa;&#x9;&#x9; &#xa;     } else {&#xa;        return true;&#xa;&#x9;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;     }&#xa;&#x9;return false;&#xa;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;true&quot;);&#xa;}">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <process
+                        jcr:created="{Date}2015-03-02T11:36:09.013+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2015-03-02T11:38:30.657+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Escalation Step"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.upgov.core.workflows.EscalationStep"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                    <participant
+                        jcr:created="{Date}2015-03-02T11:36:28.422+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2015-03-04T07:38:38.376+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Senior Engineer"
+                        sling:resourceType="cq/workflow/components/model/participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            DO_NOTIFY="true"
+                            PARTICIPANT="/home/groups/s/seg"
+                            timeoutHandler="com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer"
+                            timeoutMillis="200"/>
+                    </participant>
+                    <or
+                        jcr:created="{Date}2015-03-02T11:36:36.287+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2015-03-03T11:45:42.338+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/workflow/components/model/or"
+                        branches="2"
+                        default1="true"
+                        orSplit="true"
+                        script1="function check(){&#xa;    if (workflowData.getPayloadType() == &quot;JCR_PATH&quot;) {&#xa;&#x9;&#x9;log.info(&quot;workflowData----------------------------- &quot; + workflowData);&#xa;         var path = workflowData.getPayload().toString();&#xa;&#x9;&#x9; log.info(&quot;Path----------------------------- &quot; + path);&#xa;         var node = jcrSession.getItem(path);&#xa;&#x9;&#x9;  log.info(&quot;node----------------------------- &quot; + node);&#xa;         var  complaintStatus = node.getProperty(&quot;complaintStatus&quot;).getString();&#xa;&#x9;&#x9;  log.info(&quot;complaintStatus----------------------------- &quot; + complaintStatus);&#xa;         if (complaintStatus==&quot;completed&quot;) {&#xa;&#x9;&#x9;&#x9;  log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;            return false;&#xa;         } &#x9; &#xa;&#x9;&#x9; &#xa;     } else {&#xa;        return false;&#xa;&#x9;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;     }&#xa;&#x9;return true;&#xa;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;true&quot;);&#xa;}"
+                        script2="function check(){&#xa;    if (workflowData.getPayloadType() == &quot;JCR_PATH&quot;) {&#xa;&#x9;&#x9;log.info(&quot;workflowData----------------------------- &quot; + workflowData);&#xa;         var path = workflowData.getPayload().toString();&#xa;&#x9;&#x9; log.info(&quot;Path----------------------------- &quot; + path);&#xa;         var node = jcrSession.getItem(path);&#xa;&#x9;&#x9;  log.info(&quot;node----------------------------- &quot; + node);&#xa;         var  complaintStatus = node.getProperty(&quot;complaintStatus&quot;).getString();&#xa;&#x9;&#x9;  log.info(&quot;complaintStatus----------------------------- &quot; + complaintStatus);&#xa;         if (complaintStatus==&quot;completed&quot;) {&#xa;&#x9;&#x9;&#x9;  log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;            return true;&#xa;         } &#x9; &#xa;&#x9;&#x9; &#xa;     } else {&#xa;        return true;&#xa;&#x9;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;false&quot;);&#xa;     }&#xa;&#x9;return false;&#xa;&#x9;log.info(&quot;returning----------------------------- &quot; + &quot;true&quot;);&#xa;}">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <process
+                                jcr:created="{Date}2015-03-02T11:37:00.413+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2015-03-02T11:38:57.760+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Escalation Step"
+                                sling:resourceType="cq/workflow/components/model/process">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.upgov.core.workflows.EscalationStep"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </process>
+                            <participant
+                                jcr:created="{Date}2015-03-02T11:37:06.059+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2015-03-04T07:38:49.812+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Chief Engineer"
+                                sling:resourceType="cq/workflow/components/model/participant">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    DO_NOTIFY="true"
+                                    PARTICIPANT="/home/groups/c/ceg"
+                                    timeoutHandler="com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer"/>
+                            </participant>
+                        </_x0031_>
+                    </or>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys"/>
+            </or>
+        </flow>
+        <model/>
+    </jcr:content>
+</jcr:root>

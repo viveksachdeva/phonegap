@@ -1,0 +1,71 @@
+.quotes img:first-child {
+    content: url("../img/left-quote.png");
+}
+
+.quotes img:last-child {
+    content: url("../img/right-quote.png");
+}
+
+.threeSteps .steps .flow-part-1 {
+    content: url("../img/submit-complaint.png");
+
+}
+
+.threeSteps .steps .flow-part-2 {
+    content: url("../img/track-complaint.png");
+
+}
+
+.threeSteps .steps .flow-part-3 {
+    content: url("../img/see-solution.png");
+
+}
+
+.file-complaint form .submit_box img {
+    content: url("../img/submit_complaint.jpg");
+
+}
+
+.progressSteps .steps .step1 img.inactive {
+    content: url("../img/check.png");
+}
+
+.progressSteps .steps .step1 img.active {
+    content: url("../img/check-active.png");
+}
+
+.progressSteps .steps .step2 img.inactive {
+    content: url("../img/check.png");
+}
+
+.progressSteps .steps .step2 img.active {
+    content: url("../img/check-active.png");
+}
+
+.progressSteps .steps .step3 img.inactive {
+    content: url("../img/check.png");
+}
+
+.progressSteps .steps .step3 img.active {
+    content: url("../img/check-active.png");
+}
+
+.logo-wrapper .logo {
+    content: url("../img/logo.png");
+}
+
+.file-complaint .cameraIcon {
+    content: url("../img/camera.png");
+}
+
+.file-complaint .takePhoto {
+    content: url("../img/take.png");
+}
+
+.file-complaint .choosePhoto {
+    content: url("../img/choose.png");
+}
+
+.file-complaint .submit.tapable {
+    content: url("../img/submit-complaint.png");
+}

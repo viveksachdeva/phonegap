@@ -1,0 +1,102 @@
+﻿.ddListContainer {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* The 'selection' rectangle of the dropdownlist */
+.ddListContainer > a {
+  border: solid 1px #b9a799;
+  cursor: pointer; 
+  background: #e9dfd7;
+  overflow: hidden;
+  display: block;
+  padding: 0.8333em 30px 0.8333em 0.8333em;
+  color: #333;
+  font-weight: normal;
+}
+
+.ddListContainer.ddListDisabled > a {
+  border: solid 2px #e0e0e0;
+  cursor: default; 
+  background: #f8f8f8;
+  color: #999;
+}
+
+/* The 'selection' rectangle of the dropdownlist when open */
+/* The right arrow in the 'selection' rectangle of the dropdownlist */
+.ddListArrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -4px;
+  border: solid 7px transparent; 
+  border-top: solid 7px #505050;
+}
+.ddListDisabled .ddListArrow {
+  border-top: solid 7px #999;
+}
+.ddListIsOpen .ddListArrow {
+  border: solid 7px transparent !important; 
+  border-bottom: solid 7px #ffffff !important; 
+  margin-top: -11px;
+}
+
+/* The 'options' list of the dropdownlist */
+.ddListContainer > ul {
+  display: none;
+  position: absolute;
+  z-index: 2000;
+  border: solid 1px #776251;
+  border-top: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: auto;
+  -moz-box-shadow: 0 1px 5px #ddd;
+  -webkit-box-shadow: 0 1px 5px #ddd;
+  box-shadow: 0 1px 5px #ddd;
+}
+.ddListContainer > ul li { 
+  margin-bottom: 0;
+   border-bottom: solid 1px #d0c8c1;
+  padding-bottom:5px;
+}
+.ddListContainer > ul > li:last-child > a {
+  border-bottom: none;
+}
+
+/* Any 'option' inside the 'options' list of the dropdownlist */
+.ddListContainer > ul li a {
+  padding: 0.8333em;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: normal;
+  color: #333;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+ 
+}
+
+
+/* A 'selected' option inside the 'options' list of the dropdownlist */
+.ddListOptionIsSelected { 
+  background: #f7f4f1; 
+}
+
+/* Additional styling of text, img, description for 'selection' and 'option' */
+.ddListContainer:not(.ddListDisabled) > a > label,
+.ddListContainer:not(.ddListDisabled) > ul li a > label {
+  cursor: pointer;
+}
+.ddListContainer > a > label { 
+  font-weight:bold;
+}

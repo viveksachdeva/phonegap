@@ -1,0 +1,111 @@
+/*
+ ADOBE CONFIDENTIAL
+ __________________
+
+  Copyright 2013 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+ */
+div.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+div.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+div.swipe-wrap > div {
+    float:left;
+    width:100%;
+    position: relative;
+}
+
+div.swipe a div.carouselImageLink {
+    display: inline;
+    background-color:rgba(219,80,21,0.75);
+    padding: 0.5em 2em;
+    border-radius: 4px;
+    min-width: 4rem;
+}
+
+div.swipe .carouselImageOverlay .bottom-center {
+    position: absolute;
+    left:50%;
+    margin-left: -8rem;
+    bottom: 3rem;
+    text-align: center;
+    width: 16rem;
+}
+
+div.swipe a.carouselImageOverlay {
+    text-align: center;
+    cursor: pointer;
+    display: inline;
+    position: absolute;
+    bottom: 0rem;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 75%;
+    background-color:rgba(0,0,0,0.55);
+    padding: 0;
+    color: #e0e0e0;
+}
+
+div.swipe a.carouselImageOverlay .title {
+    margin: 1.5rem 0 0 0;
+}
+
+div.swipe a.carouselImageOverlay .description {
+    padding: 0.25rem 2rem;
+    margin: 0.25rem 0 0.1rem 0;
+    font-weight: normal;
+    font-size:0.9rem;
+}
+
+div.swipe .swipe-position {
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    line-height: .5em;
+    margin-top: -.05em;
+    margin-bottom: .3em;
+}
+
+div.swipe .swipe-position li {
+    border: 1px solid #bcbfbf;
+    list-style: none;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    display: inline-block;
+    margin: 0.1em 0.2em;
+    vertical-align: middle;
+}
+
+div.swipe .swipe-position li.active {
+    border: none;
+    padding: 1px;
+    height: 12px;
+    width: 12px;
+    background-color: grey;     /* fall back if gradient is not supported */
+    background-image: linear-gradient(bottom, rgb(97,97,97) 0%, rgb(209,209,209) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(97,97,97) 0%, rgb(209,209,209) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(97,97,97) 0%, rgb(209,209,209) 100%);
+}
+
+div.swipe .swipe-carousel-slide {
+    text-align: center;
+}

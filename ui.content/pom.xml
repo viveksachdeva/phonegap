@@ -32,8 +32,8 @@
     <!-- ====================================================================== -->
     <artifactId>UPGov-POC.ui.content</artifactId>
     <packaging>content-package</packaging>
-    <name>UPGovt Grievance Redressal  - UI content</name>
-    <description>UI content package for UPGovt Grievance Redressal </description>
+    <name>IntelliMeet  - UI content</name>
+    <description>UI content package for IntelliMeet </description>
 
     <!-- <scm>
         <connection></connection>

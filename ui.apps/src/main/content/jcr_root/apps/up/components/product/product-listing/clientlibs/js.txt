@@ -1,3 +1,0 @@
-#base=js
-
-product-list-controller.js

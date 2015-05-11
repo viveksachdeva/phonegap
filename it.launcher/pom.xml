@@ -29,8 +29,8 @@
     <!-- ====================================================================== -->
     <artifactId>UPGov-POC.it.launcher</artifactId>
     <packaging>jar</packaging>
-    <name>UPGovt Grievance Redressal  - Integration Tests Launcher</name>
-    <description>Integration Tests Launcher for UPGovt Grievance Redressal </description>
+    <name>IntelliMeet  - Integration Tests Launcher</name>
+    <description>IntelliMeet Test launcher</description>
 
     <!-- <scm>
         <connection></connection>

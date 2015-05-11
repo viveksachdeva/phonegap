@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-	<filter root="/apps/UPGov-POC">
-		<exclude pattern="/apps/UPGov-POC/install" />
-	</filter>
 	<filter root="/apps/sling"/>
 	<filter root="/apps/up"/>
 	<filter root="/etc/designs/up"/>
-	<filter root="/content/phonegap/up/content/ng-up/intellimeet-cli"/>
-    <filter root="/content/phonegap/up/content/ng-up/images/www"/>
-    <filter root="/content/phonegap/up/content/ng-up/phonegap"/>
-    <filter root="/content/phonegap/up/apps/ng-up/en/home"/>
+	<filter root="/content/phonegap/im/content/ng-up/intellimeet-cli"/>
+    <filter root="/content/phonegap/im/content/ng-up/images/www"/>
+    <filter root="/content/phonegap/im/content/ng-up/phonegap"/>
+    <!--<filter root="/content/phonegap/im/apps/ng-up"/>-->
 </workspaceFilter>

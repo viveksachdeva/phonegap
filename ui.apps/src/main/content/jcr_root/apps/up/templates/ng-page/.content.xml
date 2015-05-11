@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:description="Geometrixx Outdoors PhoneGap page"
     jcr:primaryType="cq:Template"
-    jcr:title="Geometrixx Outdoors App Page"
+    jcr:title="IM Start Page - Single Parsys"
     allowedPaths="[/content/phonegap(/.*)?]"
     ranking="{Long}-2">
     <jcr:content

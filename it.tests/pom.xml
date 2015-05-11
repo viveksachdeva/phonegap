@@ -22,7 +22,7 @@
     <!-- ====================================================================== -->
 	<parent>
         <groupId>IM</groupId>
-        <artifactId>phonegap-POC</artifactId>
+        <artifactId>phonegap</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
 	</parent>
@@ -32,8 +32,8 @@
     <!-- ====================================================================== -->
     <artifactId>UPGov-POC.it.tests</artifactId>
     <packaging>bundle</packaging>
-    <name>UPGovt Grievance Redressal  - Integration Tests Bundles</name>
-    <description>Bundles for Integration Tests for UPGovt Grievance Redressal </description>
+    <name>IntelliMeet  - Integration Tests Bundles</name>
+    <description>IntelliMeet Integration Test</description>
 
     <!-- <scm>
         <connection></connection>

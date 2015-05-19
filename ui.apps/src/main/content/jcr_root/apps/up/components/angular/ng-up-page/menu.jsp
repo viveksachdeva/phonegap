@@ -24,8 +24,7 @@
 <nav id="menu" role="navigation">
     <ul>
         <li class="header"><%= i18n.get("Menu") %></li>
-        <li style="float:none; clear:both"><a href="#" ng-click="go('/content/phonegap/up/apps/ng-up/en/home/fileComplaint')"><%= i18n.get("File a complaint") %></a></li>   
-        <li style="float:none; clear:both"><a href="#" ng-click="go('/content/phonegap/up/apps/ng-up/en/home/trackComplaint')"><%= i18n.get("Track my complaint") %></a></li>   
+        <li style="float:none; clear:both"><a href="#" ng-click="go('')"><%= i18n.get("Listing") %></a></li>
     </ul>
 
     <span class="logo-wrapper">

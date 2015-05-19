@@ -8,6 +8,6 @@
     <jcr:content
         cq:designPath="/etc/designs/phonegap/geometrixx/ng-outdoorsapp"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="geometrixx-outdoors-app/components/angular/ng-geometrixx-page"
+        sling:resourceType="up/components/angular/ng-up-page"
         page-transition="slide-animation"/>
 </jcr:root>

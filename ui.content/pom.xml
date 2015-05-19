@@ -30,7 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>UPGov-POC.ui.content</artifactId>
+    <artifactId>IM.ui.content</artifactId>
     <packaging>content-package</packaging>
     <name>IntelliMeet  - UI content</name>
     <description>UI content package for IntelliMeet </description>
@@ -118,12 +118,12 @@
                     <filterSource>${basedir}/META-INF/vault/filter.xml</filterSource>
 					<verbose>true</verbose>
 					<failOnError>true</failOnError>
-                    <group>UPGov-POC</group>
+                    <group>IM</group>
                     <embeddeds>
                         <embedded>
-                            <groupId>UPGov-POC</groupId>
-                            <artifactId>UPGov-POC.core</artifactId>
-                            <target>/apps/UPGov-POC/install</target>
+                            <groupId>IM</groupId>
+                            <artifactId>IM.core</artifactId>
+                            <target>/apps/IM/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
@@ -196,8 +196,8 @@
     <!-- ====================================================================== -->
     <dependencies>
 		<dependency>
-            <groupId>UPGov-POC</groupId>
-            <artifactId>UPGov-POC.core</artifactId>
+            <groupId>IM</groupId>
+            <artifactId>IM.core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

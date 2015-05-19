@@ -30,7 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>UPGov-POC.it.tests</artifactId>
+    <artifactId>IM.it.tests</artifactId>
     <packaging>bundle</packaging>
     <name>IntelliMeet  - Integration Tests Bundles</name>
     <description>IntelliMeet Integration Test</description>
@@ -59,7 +59,7 @@
                 <inherited>true</inherited>
                     <configuration>
                         <instructions>
-	                        <Export-Package>UPGov-POC.it.tests.*</Export-Package>
+	                        <Export-Package>IM.it.tests.*</Export-Package>
 	                        <Sling-Test-Regexp>.*Test</Sling-Test-Regexp>
                         </instructions>
                     </configuration>
@@ -100,8 +100,8 @@
         </dependency>
 
         <dependency>
-        	<groupId>UPGov-POC</groupId>
-        	<artifactId>UPGov-POC.core</artifactId>
+        	<groupId>IM</groupId>
+        	<artifactId>IM.core</artifactId>
         	<version>1.0-SNAPSHOT</version>
         	<type>bundle</type>
         	<scope>provided</scope>

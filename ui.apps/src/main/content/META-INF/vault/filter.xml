@@ -6,5 +6,5 @@
 	<filter root="/content/phonegap/im/content/ng-up/intellimeet-cli"/>
     <filter root="/content/phonegap/im/content/ng-up/images/www"/>
     <filter root="/content/phonegap/im/content/ng-up/phonegap"/>
-    <!--<filter root="/content/phonegap/im/apps/ng-up"/>-->
+    <filter root="/content/phonegap/im/apps/ng-up"/>
 </workspaceFilter>

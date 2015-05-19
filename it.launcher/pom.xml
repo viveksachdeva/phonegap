@@ -27,7 +27,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>UPGov-POC.it.launcher</artifactId>
+    <artifactId>IM.it.launcher</artifactId>
     <packaging>jar</packaging>
     <name>IntelliMeet  - Integration Tests Launcher</name>
     <description>IntelliMeet Test launcher</description>
@@ -289,8 +289,8 @@
                                 -->
                                 <sling.additional.bundle.1>org.apache.sling.junit.core</sling.additional.bundle.1>
                                 <sling.additional.bundle.2>org.apache.sling.junit.scriptable</sling.additional.bundle.2>
-                                <sling.additional.bundle.3>UPGov-POC.it.tests</sling.additional.bundle.3>
-                                <sling.additional.bundle.4>UPGov-POC.core</sling.additional.bundle.4>
+                                <sling.additional.bundle.3>IM.it.tests</sling.additional.bundle.3>
+                                <sling.additional.bundle.4>IM.core</sling.additional.bundle.4>
                                 <sling.additional.bundle.5>org.apache.sling.junit.remote</sling.additional.bundle.5>
                                 <sling.additional.bundle.6>org.apache.sling.testing.tools</sling.additional.bundle.6>
                                 <sling.additional.bundle.7>httpclient-osgi</sling.additional.bundle.7>
@@ -382,13 +382,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-        	<groupId>UPGov-POC</groupId>
-        	<artifactId>UPGov-POC.it.tests</artifactId>
+        	<groupId>IM</groupId>
+        	<artifactId>IM.it.tests</artifactId>
         	<version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-        	<groupId>UPGov-POC</groupId>
-        	<artifactId>UPGov-POC.core</artifactId>
+        	<groupId>IM</groupId>
+        	<artifactId>IM.core</artifactId>
         	<version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

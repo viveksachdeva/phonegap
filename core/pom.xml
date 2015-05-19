@@ -23,7 +23,7 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>UPGov-POC.core</artifactId>
+    <artifactId>IM.core</artifactId>
     <packaging>bundle</packaging>
     <name>IntelliMeet - Core</name>
     <description>IntelliMeet Core</description>
@@ -60,10 +60,10 @@
                         <groupId>org.apache.sling</groupId>
                         <artifactId>maven-sling-plugin</artifactId>
                         <configuration>
-                            <!-- Note that this requires /apps/UPGov-POC1/install to exist!!          -->
+                            <!-- Note that this requires /apps/IM1/install to exist!!          -->
                             <!--    This is typically the case when ui.apps is deployed first                -->
-                            <!--    Otherwise, create /apps/UPGov-POC1/install manually (CRXDE|Lite)  -->
-                            <slingUrlSuffix>/apps/UPGov-POC/install/</slingUrlSuffix>
+                            <!--    Otherwise, create /apps/IM1/install manually (CRXDE|Lite)  -->
+                            <slingUrlSuffix>/apps/IM/install/</slingUrlSuffix>
                             <failOnError>true</failOnError>
                         </configuration>
                     </plugin>
